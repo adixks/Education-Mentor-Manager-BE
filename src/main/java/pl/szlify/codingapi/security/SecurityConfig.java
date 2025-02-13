@@ -85,13 +85,12 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(List.of(
                 "http://localhost:4200",
-                "https://education-mentor-menager-fe.onrender.com"
+                "https://education-mentor-manager-fe.onrender.com"
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
