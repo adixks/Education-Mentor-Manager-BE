@@ -92,7 +92,7 @@ public class SecurityConfig {
                 "http://localhost:4200",
                 "https://67b486b52c471aa6aa818b28--mellow-gaufre-f248cf.netlify.app"
         ));
-        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
+        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS", "HEAD"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
 
